@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		526360CB1D796A120056FAD9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 526360CA1D796A120056FAD9 /* main.cpp */; };
+		52E39BE01D79F2FC008B4401 /* Dataset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52E39BDF1D79F2FC008B4401 /* Dataset.cpp */; };
+		52E39BFC1D79F7BD008B4401 /* Optimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52E39BFA1D79F7BD008B4401 /* Optimizer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		526360C71D796A120056FAD9 /* gradient_descent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gradient_descent; sourceTree = BUILT_PRODUCTS_DIR; };
 		526360CA1D796A120056FAD9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		52E39BDF1D79F2FC008B4401 /* Dataset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dataset.cpp; sourceTree = "<group>"; };
+		52E39BF91D79F614008B4401 /* Dataset.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Dataset.hpp; sourceTree = "<group>"; };
+		52E39BFA1D79F7BD008B4401 /* Optimizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Optimizer.cpp; sourceTree = "<group>"; };
+		52E39BFB1D79F7BD008B4401 /* Optimizer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Optimizer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,11 @@
 		526360C91D796A120056FAD9 /* gradient_descent */ = {
 			isa = PBXGroup;
 			children = (
+				52E39BF91D79F614008B4401 /* Dataset.hpp */,
+				52E39BDF1D79F2FC008B4401 /* Dataset.cpp */,
 				526360CA1D796A120056FAD9 /* main.cpp */,
+				52E39BFA1D79F7BD008B4401 /* Optimizer.cpp */,
+				52E39BFB1D79F7BD008B4401 /* Optimizer.hpp */,
 			);
 			path = gradient_descent;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E39BE01D79F2FC008B4401 /* Dataset.cpp in Sources */,
 				526360CB1D796A120056FAD9 /* main.cpp in Sources */,
+				52E39BFC1D79F7BD008B4401 /* Optimizer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +251,7 @@
 				526360D01D796A120056FAD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

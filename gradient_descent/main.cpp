@@ -7,9 +7,25 @@
 //
 
 #include <iostream>
+#include <cstdlib>
+#include <fstream>
+#include <vector>
+#include <iomanip>
+#include "Dataset.hpp"
+#include "Optimizer.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main(int argc, const char * argv[])
+{
+    DATASET ds;
+    ds.createTrainingData(100);
+    //ds.showTrainingData();
+    OPTIMIZER opt;
+    opt.loadData(ds);
+    opt.setLearningRate(0.0001);
+    opt.startGradientDescent(20000);
     return 0;
 }
+
+
